@@ -20,3 +20,11 @@ Inside a while loop, a menu is displayed with different options for the user to 
  Option 6 exits the program.
 
 Overall, this code provides a basic command-line interface for network scanning tasks
+
+
+
+To download the tool on the Linux environment:
+
+      git clone https://github.com/BaraaS002/Baraa-Scan.git
+
+
