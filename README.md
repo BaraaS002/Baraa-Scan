@@ -12,12 +12,15 @@ The code then utilizes the termcolor and pyfiglet libraries for colorful and sty
 Inside a while loop, a menu is displayed with different options for the user to choose from.
 
  Depending on the user's choice, different actions are performed:
- Option 1 retrieves the local host name.
- Option 2 gets the service name associated with a specific port number.
- Option 3 performs port scanning on a target host within a given port range.
- Option 4 checks if a specific port is open on a target host.
- Option 5 obtains the IP address of a given domain.
- Option 6 exits the program.
+ *Option 1 retrieves the local host name.
+ *Option 2 gets the service name associated with a specific port number.
+ *Option 3 performs port scanning on a target host within a given port range.
+ *Option 4 checks if a specific port is open on a target host.
+ *Option 5 obtains the IP address of a given domain.
+ *Option 6 performs a DNS lookup for a given domain name, retrieving all associated IP addresses.
+ *Option 7 allows users to locate and gather information about a specific IP address using an external IP locator API.
+ *Option 8 is the final option in the menu, allowing users to exit the program gracefully.
+ *Option 9 exits the program.
 
 Overall, this code provides a basic command-line interface for network scanning tasks
 
