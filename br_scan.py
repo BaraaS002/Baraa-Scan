@@ -8,7 +8,6 @@ import requests
 def scan_ports(target_host, start_port, end_port):
     open_ports = []
     for port in range(start_port, end_port + 1):
-        # Create a socket object
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)  
         result = sock.connect_ex((target_host, port))
@@ -63,7 +62,6 @@ if __name__ == '__main__':
 
         elif choice == "3":
             target_host = input("Enter the target IP address or hostname: ")
-            # Validate IP address
             if not validate_ip(target_host):
                 print("Invalid target host IP address")
                 continue
