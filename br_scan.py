@@ -17,13 +17,12 @@ def scan_ports(target_host, start_port, end_port):
     return open_ports
 
 
-def validate_ip(ip):
+def validate_ip(ip): 
     pattern = re.compile(r'^(\d{1,3}\.){3}\d{1,3}$')
     return pattern.match(ip)  
 
 
 if __name__ == '__main__':
-    
     
     
     #######################################################################################
