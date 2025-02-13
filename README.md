@@ -1,33 +1,98 @@
-# Baraa-Scan
-create by Eng Baraa Sahmoud
+# Baraa-Scan Tool
 
-This code is a simple port scanning tool written in Python. It allows the user to perform various actions related to network scanning. Here's a breakdown of the code:
+Baraa Scan is a versatile network scanning tool designed to help you perform various network-related tasks such as port scanning, DNS lookup, IP location, and more. This tool is built using Python and leverages libraries like `socket`, `requests`, `re`, `termcolor`, and `pyfiglet` to provide a user-friendly interface for network analysis.
 
- The code imports the necessary modules: socket for creating socket objects, and re for validating IP address format and obtaining the IP of a domain.
+## Features
 
- Two functions are defined: scan_ports for scanning a range of ports on a target host, and validate_ip for validating the format of an IP address.
+1. **Get Localhost**: Retrieves the local hostname of the machine.
+2. **Get Service Name for a Port**: Finds the service name associated with a specific port.
+3. **Port Scanning**: Scans a range of ports on a target host to identify open ports.
+4. **Check if a Port is Open**: Checks if a specific port on a target host is open.
+5. **Get IP of a Domain**: Resolves the IP address of a given domain name.
+6. **DNS Lookup**: Performs a DNS lookup to retrieve all IP addresses associated with a domain.
+7. **IP Locator**: Provides geographical information (country, region, city, etc.) for a given IP address.
+8. **Exit**: Exits the tool.
 
-The code then utilizes the termcolor and pyfiglet libraries for colorful and stylized text output.
+## Installation
 
-Inside a while loop, a menu is displayed with different options for the user to choose from.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/baraa-scan.git
+   cd baraa-scan
+   ```
 
- Depending on the user's choice, different actions are performed:
- *Option 1 retrieves the local host name.
- *Option 2 gets the service name associated with a specific port number.
- *Option 3 performs port scanning on a target host within a given port range.
- *Option 4 checks if a specific port is open on a target host.
- *Option 5 obtains the IP address of a given domain.
- *Option 6 performs a DNS lookup for a given domain name, retrieving all associated IP addresses.
- *Option 7 allows users to locate and gather information about a specific IP address using an external IP locator API.
- *Option 8 is the final option in the menu, allowing users to exit the program gracefully.
- *Option 9 exits the program.
+2. **Install Dependencies**:
+   Ensure you have Python 3.x installed. Then, install the required Python packages:
+   ```bash
+   pip install termcolor pyfiglet requests
+   ```
 
-Overall, this code provides a basic command-line interface for network scanning tasks
+3. **Run the Tool**:
+   ```bash
+   python baraa_scan.py
+   ```
+
+## Usage
+
+1. **Get Localhost**:
+   - Select option `1` from the menu to display the local hostname.
+
+2. **Get Service Name for a Port**:
+   - Select option `2` and enter the port number to retrieve the associated service name.
+
+3. **Port Scanning**:
+   - Select option `3`, enter the target IP address or hostname, and specify the port range to scan for open ports.
+
+4. **Check if a Port is Open**:
+   - Select option `4`, enter the target IP address or hostname, and specify the port number to check if it is open.
+
+5. **Get IP of a Domain**:
+   - Select option `5` and enter the domain name to resolve its IP address.
+
+6. **DNS Lookup**:
+   - Select option `6` and enter the domain name to perform a DNS lookup and retrieve all associated IP addresses.
+
+7. **IP Locator**:
+   - Select option `7` and enter the IP address to get geographical information such as country, region, city, etc.
+
+8. **Exit**:
+   - Select option `8` to exit the tool.
+
+## Example
+
+```bash
+$ python baraa_scan.py
+
+  ____            _       ____                  
+ | __ )  __ _ ___| |__   / ___|  ___ __ _ _ __  
+ |  _ \ / _` / __| '_ \  \___ \ / __/ _` | '_ \ 
+ | |_) | (_| \__ \ | | |  ___) | (_| (_| | | | |
+ |____/ \__,_|___/_| |_| |____/ \___\__,_|_| |_|
+ 
+Create by Eng Baraa Sahmoud
+
+Menu:
+*** Baraa Scan ***
+1. Get localhost
+2. Get the service name for this port
+3. Port scanning
+4. Check if a port is open
+5. Get the IP of this domain
+6. DNS lookup
+7. IP Locator
+8. Exit
+*** ☠️ ***
+Enter your choice (1-8): 3
+Enter the target IP address or hostname: 192.168.1.1
+Enter the starting port: 1
+Enter the ending port: 100
+Open ports:
+22
+80
+```
 
 
+.
 
-To download the tool on the Linux environment:
-
-      git clone https://github.com/BaraaS002/Baraa-Scan.git
-
+---
 
