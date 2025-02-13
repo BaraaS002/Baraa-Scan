@@ -1,5 +1,5 @@
 # Baraa-Scan Tool
-
+By Eng Baraa Sahmoud 
 Baraa Scan is a versatile network scanning tool designed to help you perform various network-related tasks such as port scanning, DNS lookup, IP location, and more. This tool is built using Python and leverages libraries like `socket`, `requests`, `re`, `termcolor`, and `pyfiglet` to provide a user-friendly interface for network analysis.
 
 ## Features
@@ -18,9 +18,11 @@ Baraa Scan is a versatile network scanning tool designed to help you perform var
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/baraa-scan.git
+ 
+   ```
+   ```bash
    cd baraa-scan
    ```
-
 2. **Install Dependencies**:
    Ensure you have Python 3.x installed. Then, install the required Python packages:
    ```bash
